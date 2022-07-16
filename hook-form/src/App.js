@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import Form from './components/Form';
-import FormSubmit from './components/FormData';
+import FormData from './components/FormData';
 
 function App() {
   const [state, setState] = useState({
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Form inputs={state} setInputs={setState}/>
-      <FormSubmit data={state}/>
+      <FormData data={state}/>
     </div>
   );
 }
