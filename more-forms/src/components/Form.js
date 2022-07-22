@@ -12,9 +12,8 @@ const Form = props => {
   };
 
   return (
-    <div>
-      <h3>Form</h3>
-      <form>
+    <div className="d-flex justify-content-center">
+      <form className="w-50">
         <div className="form-group">
           <label htmlFor="firstName">First Name: </label>
           <input
