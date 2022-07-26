@@ -22,7 +22,7 @@ const submitHandler = (e) =>{
         <div>
             <form onSubmit={submitHandler}>
                 <input value={todoText} onChange={(e)=>setTodoText(e.target.value)} type="text"/>
-                <button>Add</button>
+                <button class="btn btn-primary">Add</button>
             </form>
         </div>
     )

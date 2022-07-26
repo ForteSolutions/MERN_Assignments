@@ -34,7 +34,7 @@ const Display = (props)=>{
                     <div className={styled(todo.markedDelete)} key={index}>
                         <p>{todo.content}</p>
                         <input type="checkbox" onChange={(e)=>handleCompleted(todo)}/>
-                        <button onClick={(e)=>deleteButton(todo.id)}>Delete</button>
+                        <button onClick={(e)=>deleteButton(todo.id)} class="btn btn-dark">Delete</button>
                     </div>
                 ))
             }
