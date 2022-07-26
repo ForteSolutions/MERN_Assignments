@@ -15,7 +15,7 @@ const submitHandler = (e) =>{
         id: Math.floor(Math.random() * 100000000)
     }])
 
-    setTodoList("");
+    setTodoText("");
 }
 
     return(

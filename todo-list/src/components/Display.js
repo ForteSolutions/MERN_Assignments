@@ -31,7 +31,7 @@ const Display = (props)=>{
         <div>
             {
                 todoList.map((todo, index)=>(
-                    <div className=[styled(todo.markedDelete)} key={index}>
+                    <div className={styled(todo.markedDelete)} key={index}>
                         <p>{todo.content}</p>
                         <input type="checkbox" onChange={(e)=>handleCompleted(todo)}/>
                         <button onClick={(e)=>deleteButton(todo.id)}>Delete</button>
@@ -40,6 +40,6 @@ const Display = (props)=>{
             }
         </div>
     )
-)
+}
 
 export default Display;
