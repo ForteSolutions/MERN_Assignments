@@ -36,7 +36,7 @@ const DisplayAll = (props) => {
                 productList.map((product, index)=>(
                     <div key={product._id}>
                         <Link to={`/product/${product._id}`}>{product.title}</Link>
-                        <Link to={`/product/edit/${product._id}`}>Edit</Link>
+                        <Link to={`/product/edit/${product._id}`}>| Edit |</Link>
                         <button onClick={()=>deleteFilter(product._id)}>Delete</button>
                     </div>
                 ))
