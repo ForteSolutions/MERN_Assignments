@@ -10,7 +10,7 @@ const CreateProduct = (props)=>{
     const [description, setDescription] = useState("");
 
     const submitHandler = (e) =>{
-        e.preventDefault();
+        e.preventDefault();1
 
         axios.post("http://localhost:8000/api/products",{
             title,
