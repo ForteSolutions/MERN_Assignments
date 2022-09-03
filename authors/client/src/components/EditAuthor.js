@@ -9,6 +9,7 @@ const EditAuthor = (props) => {
     const [authorNotFoundError, setAuthorNotFoundError] = useState("");
     const navigate = useNavigate();
     console.log(id);
+    
     useEffect(() => {
         axios
             .get(`http://localhost:8000/api/author/${id}`)
