@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const AuthorForm = () => {
     const [name, setName] = useState("");
-    const [errors, setErrors] = useState({}); g
+    const [errors, setErrors] = useState({});
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
